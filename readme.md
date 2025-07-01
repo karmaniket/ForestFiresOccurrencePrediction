@@ -83,8 +83,8 @@ Contains meteorological and temporal features for forest fire events, including:
 ### 1. Clone the repository
 
 ```sh
-  git clone https://github.com/karmaniket/ForestFiresOccurrencePrediction.git
-  cd ForestFiresOccurrencePrediction
+  git clone https://github.com/karmaniket/ForestFiresOccPrediction.git
+  cd ForestFiresOccPrediction
    ```
 
 ### 2. Install dependencies
