@@ -1,4 +1,4 @@
-<h1 align="center">Forest Fire Occurrence Prediction</h1>
+<h1 align="center">Forest Fires Occurrence Prediction</h1>
 
 This project predicts the occurrence of forest fires using a logistic regression model. It uses the [Forest Fires](https://archive.ics.uci.edu/dataset/162/forest+fires) dataset, performs data preprocessing, feature engineering, model training, evaluation, and generates various visualizations to interpret the results.
 
