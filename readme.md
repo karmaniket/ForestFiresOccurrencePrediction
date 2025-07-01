@@ -62,7 +62,7 @@ This project predicts the occurrence of forest fires using a logistic regression
 
 ## Dataset
 
-### Description
+### 1. Description
 Contains meteorological and temporal features for forest fire events, including:
 - X, Y: Spatial coordinates
 - month, day: Categorical (month and day of observation)
@@ -71,7 +71,7 @@ Contains meteorological and temporal features for forest fire events, including:
 - area: Burned area
 - target: Binary label (1 = fire occurred, 0 = no fire)
 
-### Source and Attribution
+### 2. Source and Attribution
 - [Forest Fires](https://archive.ics.uci.edu/dataset/162/forest+fires) dataset, by Paulo Cortez and Aníbal Morais, University of Minho, Portugal  
 - UCI Machine Learning Repository  
 - Kaggle community for dataset hosting and accessibility
