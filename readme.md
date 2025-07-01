@@ -131,5 +131,3 @@ Contains meteorological and temporal features for forest fire events, including:
 - **Model:** Logistic Regression
 - **Evaluation Metrics:** Accuracy, confusion matrix, ROC-AUC, precision-recall, feature importance
 - **Visual Insights:** Plots help understand model performance, feature effects, and data distribution
-
----
