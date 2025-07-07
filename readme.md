@@ -2,8 +2,6 @@
 
 This project predicts the occurrence of forest fires using a logistic regression model. It uses the [Forest Fires](https://archive.ics.uci.edu/dataset/162/forest+fires) dataset, performs data preprocessing, feature engineering, model training, evaluation, and generates various visualizations to interpret the results.
 
----
-
 ## Visualizations
 
 <table><tr><td>
@@ -47,8 +45,6 @@ This project predicts the occurrence of forest fires using a logistic regression
       <i>Visualizes the confusion matrix, showing the number of true positives, true negatives, false positives, and false negatives. This provides a detailed breakdown of model prediction outcomes.</i><br><br>
       <img width="auto" src="output/confusion_matrix.png">
 
----
-
 ## Project Structure
 
 ```bash
@@ -56,15 +52,15 @@ This project predicts the occurrence of forest fires using a logistic regression
 ├── forestfires.csv                 # Dataset
 ├── forestfires.ipynb               # notebook
 ├── output/                         # Generated plots and results
-│   └── .png 
 ```
----
 
 ## Dataset
 
 ### 1. Description
-Contains meteorological and temporal features for forest fire events, including:
-- X, Y: Spatial coordinates
+
+The dataset contains information about forest fires in the northeast region of Portugal, collected from 2000 to 2007. It includes meteorological and temporal features that can help predict the occurrence of forest fires. The dataset is structured as follows:
+
+- X, Y: Spatial coordinates (longitude, latitude)
 - month, day: Categorical (month and day of observation)
 - FFMC, DMC, DC, ISI: Fire weather indices
 - temp, RH, wind, rain: Weather conditions
@@ -72,56 +68,62 @@ Contains meteorological and temporal features for forest fire events, including:
 - target: Binary label (1 = fire occurred, 0 = no fire)
 
 ### 2. Source and Attribution
+
 - [Forest Fires](https://archive.ics.uci.edu/dataset/162/forest+fires) dataset, by Paulo Cortez and Aníbal Morais, University of Minho, Portugal  
 - UCI Machine Learning Repository  
 - Kaggle community for dataset hosting and accessibility
 
----
-
-## Setup & Installation
+## Setup
 
 ### 1. Clone the repository
 
 ```sh
   git clone https://github.com/karmaniket/ForestFiresOccPrediction.git
   cd ForestFiresOccPrediction
-   ```
+```
 
 ### 2. Install dependencies
 
 ```sh
    pip install pandas numpy matplotlib seaborn scikit-learn
-   ```
----
+```
 
 ## Notebook Workflow
 
 ### 1. Data Loading & Preprocessing
+
 - Reads the dataset
 - One-hot encodes categorical features (`month`, `day`)
 - Scales numerical features
 
 ### 2. Model Training
+
 - Splits data into train/test sets
 - Trains a logistic regression model
 
 ### 3. Evaluation & Visualization
-- Prints accuracy, confusion matrix, and classification report
-- Plots:
-    - Target distribution
-    - Feature correlation heatmap
-    - Confusion matrix
-    - Feature importance (coefficients)
-    - ROC curve
-    - Precision-recall curve
-    - Learning curve
-    - Residuals histogram
-    - Predicted probability histograms by class
+
+Evaluates model performance using various metrics and visualizations:
+
+- Accuracy, confusion matrix, ROC-AUC, precision-recall
+- Feature importance based on logistic regression coefficients
+- Learning curve to assess model performance with varying training sizes
+
+Generates various plots to visualize:
+
+- Target distribution
+- Feature correlations
+- Confusion matrix
+- Feature importance
+- ROC curve
+- Precision-recall curve
+- Learning curve
+- Residuals histogram
+- Predicted probability histograms by class
 
 ### 4. Output
-- All plots are saved in the `output/` directory for further analysis.
 
----
+All evaluation metrics and visualizations are generated and saved in the `output/` directory for further analysis.
 
 ## Key Features and Results
 
